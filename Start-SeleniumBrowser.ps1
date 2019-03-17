@@ -9,7 +9,10 @@
         [Parameter(Mandatory = $false)]
         $Url
         )
-           
+
+        [System.Reflection.Assembly]::LoadFrom("$PSScriptRoot\assemblies\WebDriver.dll")
+        [System.Reflection.Assembly]::LoadFrom("$PSScriptRoot\assemblies\WebDriver.Support.dll")
+
         switch ($Browser) {
             'Chrome' {
                $global:WebDriver = New-Object -TypeName OpenQA.Selenium.Chrome.ChromeDriver
