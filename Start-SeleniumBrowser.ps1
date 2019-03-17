@@ -24,7 +24,7 @@
             
             'Firefox' {
                $global:WebDriver = New-Object -TypeName OpenQA.Selenium.Firefox.FirefoxDriver
-                }
+                  }
          }
 
             $global:WebDriver.Navigate().GoToUrl("http://www." + $Url)
