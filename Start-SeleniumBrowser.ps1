@@ -7,6 +7,7 @@
         $Browser,
         
         [Parameter(Mandatory = $false)]
+        [String]
         $Url
         )
 
@@ -16,6 +17,8 @@
         switch ($Browser) {
             'Chrome' {
                $global:WebDriver = New-Object -TypeName OpenQA.Selenium.Chrome.ChromeDriver
+
+                 $global:WebDriver.Manage().Window.Maximize()
                   }
             
             'IE' {
