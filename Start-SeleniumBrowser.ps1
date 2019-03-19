@@ -29,6 +29,4 @@
 
             $global:WebDriver.Navigate().GoToUrl("http://www." + $Url)
 
-}
-
-
+  }                           
