@@ -1,7 +1,9 @@
 # SeleniumPowerShell
 Selenium Automation with PowerShell
 
-# Functions
+# Start-SeleniumBrowser
 Launch Browser with Selenium WebDriver (Chrome, IE, FireFox)
-Start-SeleniumBrowser
+-Browser (Chrome, IE, FireFox)
+
+-URL "www.google.co.za"
 
